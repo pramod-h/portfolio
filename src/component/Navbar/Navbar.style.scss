@@ -1,0 +1,35 @@
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 9%);
+    font-size: 20px;
+    height: auto;
+    position: fixed;
+    top: 0;
+    inset-inline: 0;
+    z-index: 100;
+    padding: 25px 40px;
+
+    &-List {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        column-gap: 3rem;
+        margin: 0;
+        cursor: pointer;
+
+    }
+
+    &-Links {
+        color: #2d2e32;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all .23s;
+
+        &:hover {
+            color: #147efb;
+        }
+    }
+}

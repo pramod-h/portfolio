@@ -1,0 +1,25 @@
+#wrapper {
+    align-items: center;
+    display: flex;
+    height: 400px;
+    justify-content: center;
+  }
+  
+  #loading {
+    height: 400px;
+    position: relative;
+    width: 400px;
+  }
+  
+  img {
+    position: absolute;
+  }
+  
+  .ring {
+    animation: ring linear 6s infinite;
+    transform:rotateY(0deg) rotateZ(120deg);
+  }
+  
+   @keyframes ring {
+     to {  transform:rotateY(360deg) rotateZ(120deg); }
+  }
