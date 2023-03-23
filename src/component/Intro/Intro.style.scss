@@ -1,5 +1,7 @@
-$color-white: #FFFBFA;
-$color-black: #191308;
+:root {
+    --color-white: #FFFBFA;
+    --color-black: #2d2e32;
+}
 
 .Intro {
     &-Container {
@@ -11,6 +13,7 @@ $color-black: #191308;
         max-width: 34rem;
 
         h3 {
+            font-size: 20px;
             font-weight: 500;
         }
     }
@@ -19,7 +22,7 @@ $color-black: #191308;
         display: flex;
         column-gap: 10px;
         font-size: 50px;
-        color: #2d2e32;
+        color: var(--color-black);
         font-weight: 600;
     }
 
@@ -86,7 +89,7 @@ $color-black: #191308;
 
                 & .social-group {
                     &__icon {
-                        fill: $color-black;
+                        fill: var(--color-black);
                         transition: all .2s;
                     }
 
@@ -96,7 +99,7 @@ $color-black: #191308;
                     }
 
                     &__outline {
-                        stroke: $color-black;
+                        stroke: var(--color-black);
                         transform-origin: 50% 50%;
                         transition: all .2s;
                     }
@@ -107,17 +110,13 @@ $color-black: #191308;
                 &:focus {
                     & .social-group {
                         &__icon {
-                            fill: $color-white;
+                            fill: var(--color-white);
                             transition: all .45s;
                         }
 
                         &__inner-circle {
                             fill: currentColor;
                             transition: all .45s;
-
-                            &--instagram {
-                                fill: url(#simpleInsta) !important;
-                            }
                         }
 
                         &__outline {

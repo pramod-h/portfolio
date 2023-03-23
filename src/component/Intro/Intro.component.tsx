@@ -9,7 +9,7 @@ const Intro: React.FC = () => {
       <div className="Intro-Container">
         <div className="Intro-Main">
           <div className="Details">
-            <h3>Hello, </h3>
+            <h3>Hello__ </h3>
             <span className="Intro-TypeWriter">
               I'm
               <Typewriter
@@ -21,7 +21,7 @@ const Intro: React.FC = () => {
               />
             </span>
             <p className="Intro-Sub">
-              Hi, I'm Pramod H. A passionate Front-end React Developer based in
+              Hi, I'm Pramod H. A passionate Front-end Developer based in
               Bangalore, Karnataka 📍.
             </p>
             <span className="Intro-Social">
