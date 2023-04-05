@@ -2,13 +2,19 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 
 import "./Intro.style.scss";
+declare module 'react' {
+  interface HTMLAttributes<T> extends DOMAttributes<T> {
+      block?: string
+      elem?: string
+  }
+}
 
 const Intro: React.FC = () => {
   return (
-    <section id="intro" className="Intro">
-      <div className="Intro-Container">
+    <section id="intro" block="Intro">
+      <div block="Intro" elem="Container">
         <div className="Intro-Main">
-          <div className="Details">
+          {/* <div className="Details">
             <h3>Hello__ </h3>
             <span className="Intro-TypeWriter">
               I'm
@@ -99,7 +105,7 @@ const Intro: React.FC = () => {
               </a>
             </span>
           </div>
-          <div className="Intro-Image" />
+          <div className="Intro-Image" /> */}
         </div>
       </div>
     </section>
